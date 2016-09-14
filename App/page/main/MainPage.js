@@ -1,7 +1,9 @@
 import React, {Component, PropTypes} from "react";
 import {StyleSheet, View, Text, Image} from "react-native";
 import TabNavigator from "react-native-tab-navigator";
-import {renderTabScene} from "../../scene/SceneManager";
+import DiscoveryNavigator from "../../navigator/DiscoveryNavigator"
+import SubscriptionNavigator from "../../navigator/SubscriptionNavigator"
+import UserNavigator from "../../navigator/UserNavigator"
 
 export default class MainPage extends Component {
     render() {
@@ -15,7 +17,7 @@ export default class MainPage extends Component {
                     renderIcon={() => <Image source={require("../../image/tab/ic_tab_discovery.png")} style={styles.iconStyle}/>}
                     renderSelectedIcon={() => <Image source={require("../../image/tab/ic_tab_discovery_selected.png")} style={styles.iconStyle}/>}
                     onPress={() => this.props.onTabPress({key: 'DiscoveryTab'})}>
-                    {renderTabScene({key: 'DiscoveryTab'})}
+                    <DiscoveryNavigator/>
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     title="订阅"
@@ -25,7 +27,7 @@ export default class MainPage extends Component {
                     renderIcon={() => <Image source={require("../../image/tab/ic_tab_subscription.png")} style={styles.iconStyle}/>}
                     renderSelectedIcon={() => <Image source={require("../../image/tab/ic_tab_subscription_selected.png")} style={styles.iconStyle}/>}
                     onPress={() => this.props.onTabPress({key: 'SubscriptionTab'})}>
-                    {renderTabScene({key: 'SubscriptionTab'})}
+                    <SubscriptionNavigator/>
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     title="我的"
@@ -35,7 +37,7 @@ export default class MainPage extends Component {
                     renderIcon={() => <Image source={require("../../image/tab/ic_tab_user.png")} style={styles.iconStyle}/>}
                     renderSelectedIcon={() => <Image source={require("../../image/tab/ic_tab_user_selected.png")} style={styles.iconStyle}/>}
                     onPress={() => this.props.onTabPress({key: 'UserTab'})}>
-                    {renderTabScene({key: 'UserTab'})}
+                    <UserNavigator/>
                 </TabNavigator.Item>
             </TabNavigator>
         );

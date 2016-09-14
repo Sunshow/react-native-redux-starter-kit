@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {StyleSheet, View, Text, TouchableOpacity} from "react-native";
 
-class SubscriptionPage extends Component {
+export default class SubscriptionPage extends Component {
     render() {
         return (
             <View style={
@@ -16,5 +16,3 @@ class SubscriptionPage extends Component {
         );
     }
 }
-
-module.exports = SubscriptionPage;

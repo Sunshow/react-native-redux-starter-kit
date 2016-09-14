@@ -1,0 +1,5 @@
+export const NAVIGATOR_NAME_ROOT = 'root'
+export const NAVIGATOR_NAME_LOGIN = 'login'
+export const NAVIGATOR_NAME_DISCOVERY = 'discovery'
+export const NAVIGATOR_NAME_SUBSCRIPTION = 'subscription'
+export const NAVIGATOR_NAME_USER = 'user'

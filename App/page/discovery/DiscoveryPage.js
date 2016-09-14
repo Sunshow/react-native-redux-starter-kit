@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {StyleSheet, View, Text, Image, ListView, TouchableOpacity} from "react-native";
 import Swiper from "react-native-swiper";
-import SGListView from "react-native-sglistview";
+import SGListView from 'react-native-sglistview';
 
 const BANNER_IMGS = [
     require('../../image/banner/1.jpg'),
@@ -27,7 +27,7 @@ class DiscoveryPage extends Component {
 
     render() {
         return (
-            <View style={{flex: 1}}>
+            <View>
                 <Swiper style={styles.wrapper} height={120} autoplay={true}>
                     {this.state.banners.map((item, key) => {
                         return (
