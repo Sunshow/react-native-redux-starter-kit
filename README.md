@@ -1,5 +1,9 @@
 # react-native-redux-starter-kit
 
+## Demo
+
+![Simple Demo](https://raw.githubusercontent.com/Sunshow/react-native-redux-starter-kit/master/demo.gif)
+
 ## Features
 
 - Use NavigationExperimental
